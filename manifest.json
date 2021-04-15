@@ -1,0 +1,59 @@
+{
+  "name": "Trading Sites currency convertor",
+  "version": "0.0.2",
+  "manifest_version": 2,
+  "description": "Chrome Extension to show GBP values by default on various CSGO marketplaces",
+  "homepage_url": "http://wwinter.co.uk/",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "default_locale": "en",
+  "background": {
+    "scripts": [
+      "src/bg/background.js"
+    ],
+    "persistent": true
+  },
+  "permissions": [
+    "https://bitskins.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://bitskins.com/*"
+      ],
+      "css": [
+        "src/inject/inject.css"
+      ]
+    },
+    {
+      "matches": [
+        "https://bitskins.com/*"
+      ],
+      "js": [
+        "js/jquery/jquery.min.js",
+        "src/inject/inject.js"
+      ]
+    },
+    {
+      "matches": [
+        "https://buff.163.com/*"
+      ],
+      "js": [
+        "js/jquery/jquery.min.js",
+        "src/inject/buff-inject.js"
+      ]
+    },
+    {
+      "matches": [
+        "https://csgofloat.com/*"
+      ],
+      "js": [
+        "js/jquery/jquery.min.js",
+        "src/inject/csgofloat-inject.js"
+      ]
+    }
+  ]
+}
