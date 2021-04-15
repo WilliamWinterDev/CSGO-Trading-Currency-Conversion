@@ -24,17 +24,9 @@
       "matches": [
         "https://bitskins.com/*"
       ],
-      "css": [
-        "src/inject/inject.css"
-      ]
-    },
-    {
-      "matches": [
-        "https://bitskins.com/*"
-      ],
       "js": [
         "js/jquery/jquery.min.js",
-        "src/inject/inject.js"
+        "src/inject/bitskins-inject.js"
       ]
     },
     {
