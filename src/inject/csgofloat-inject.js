@@ -1,5 +1,5 @@
 jQuery.ajax({
-	url: "https://free.currconv.com/api/v7/convert?q=USD_GBP,USD_EUR&compact=ultra&apiKey=c7a86fcc49475b204dbb",
+	url: "https://free.currconv.com/api/v7/convert?q=USD_GBP,USD_EUR&compact=ultra&apiKey=<API KEY>",
 	success: successFunc
   });
 
